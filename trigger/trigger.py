@@ -86,9 +86,6 @@ class Trigger:
         if trigger is None:
             await self.bot.say("That trigger doesn't exist.")
             return
-        if not trigger.can_edit(author):
-            await self.bot.say("You're not allowed to edit that trigger.")
-            return
 
         if response is not None:
             trigger.responses.append(response)
