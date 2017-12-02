@@ -24,7 +24,6 @@ class ServerQuotes:
     def __init__(self, bot):
         self.bot = bot
         self.quotes = dataIO.load_json(JSON)
-        self.analytics = CogAnalytics(self)
 
     def _get_random_quote(self, ctx):
         sid = ctx.message.server.id
@@ -204,10 +203,6 @@ class ServerQuotes:
             else:
                 raise
         await self.bot.say(self._format_quote(ctx, quote))
-
-    async def on_command(self, command, ctx):
-        if ctx.cog is self:
-            self.analytics.command(ctx)
 
 
 def check_folder():
