@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "calebj, tweaks by Neurario",
+    "SHORT" : "Store and recall quotes per-server",
+    "DESCRIPTION" : "Store and recall quotes per-server",
+    "DISABLED" : false,
+    "NAME" : "ServerQuotes",
+    "INSTALL_MSG" : "`PLEASE NOTE QUOTES IN THIS VERSION CAN BE CREATED BY ANYONE. Only users with Manage Messages permissions can remove quotes from the server.`"
+}
